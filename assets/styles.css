@@ -1,0 +1,215 @@
+html, body {
+  width:100vw;
+  height:auto;
+  margin:0;
+  padding:0;
+  display:block;
+  position:relative;
+  scroll-behavior:smooth;
+}
+
+.red{
+  color:red;
+}
+
+.big-caslon{
+  font-family: big-caslon-fb, serif;
+  font-style:normal;
+}
+
+.nimbus-sans{
+  font-family: nimbus-sans, sans-serif;
+  font-style:normal;
+  font-weight:300;
+}
+
+#gradient{
+  width:100vw;
+  height:100vh;
+  position:fixed;
+  /* background: radial-gradient(circle, rgba(189,203,202,1) 0%, rgba(202,211,219,1) 20%, rgba(175,183,191,1) 73%); */
+  /* background:#a1a2a6; */
+  /* background: radial-gradient(circle, rgba(161,162,166,1) 0%, rgba(151,152,156,1) 100%); */
+  /* background: radial-gradient(circle, rgba(190,201,197,1) 0%, rgba(174,184,180,1) 69%); */
+  /* background:black; */
+  background: radial-gradient(circle, rgba(173,180,177,1) 0%, rgba(151,158,155,1) 69%);
+}
+
+
+.header{
+  position:fixed;
+  top:127px;
+  left:50px;
+  z-index:1000;
+  font-size:.8vw;
+  letter-spacing:.5vw;
+  text-decoration:none;
+}
+
+#category{
+  width:10vw;
+  position:fixed;
+  display:block;
+  top:250px;
+  left:50px;
+  z-index:1200;
+  /* animation:opacity 4s ease-in 0s 1, blur 4s ease 0s 1; */
+}
+
+#category a{
+  text-decoration: none;
+  display:block;
+  width:fit-content;
+  padding:.5vw;
+  border: solid 1px red;
+}
+
+#line{
+  border-left: 1px solid red;
+  height:1500px;
+  padding-bottom:50px;
+  position: absolute;
+  left: 50%;
+  margin-left: -.5px;
+}
+
+
+#container{
+  width:100vw;
+  position:relative;
+  animation:opacity 2s ease-in 0s 1, blur 3s ease 0s 1;
+}
+
+.link{
+  width:10vw;
+  z-index:1500;
+  text-decoration:none;
+  font-size:2vw;
+  position:absolute;
+}
+
+
+@keyframes opacity{
+  0%{opacity:0%};
+  100%{opacity:100%};
+}
+
+@keyframes blur{
+  0%{filter:blur(40px)};
+  80%{filter:blur(20px)};
+  100%{filter:blur(0)};
+}
+
+.fx{
+  opacity:.75;
+  transition: all .5s ease-in-out;
+}
+
+.fx:hover{
+  transform:scale(1.2);
+  opacity:1;
+  z-index:900;
+}
+
+
+.full{
+  display:none;
+}
+
+.full .photos{
+  width:50%;
+  position:absolute;
+  left:50%;
+  overflow:scroll;
+}
+
+.photos img, .photos video{
+  width:50vw;
+}
+
+.description{
+  width:40%;
+  display:block !important;
+  padding:5% 5% 5% 50px;
+  bottom:0;
+  position:fixed;
+}
+
+.full .description h1{
+  font-size:2vw;
+  margin:0;
+}
+
+.full .description p{
+  margin:0;
+}
+
+.full .description a{
+  text-decoration:none;
+  color:red;
+  margin:0 .5vw 0 .5vw;
+}
+
+
+#chimera{
+  position:absolute;
+  top:20vw;
+  left:50vw;
+}
+
+#chimera img{
+  width:20vw;
+  z-index:4;
+}
+
+#israel{
+  position:absolute;
+  top:50vw;
+  left:48vw;
+}
+
+#israel img{
+  width:27vw;
+  z-index:1;
+}
+
+
+#poetry{
+  position:absolute;
+  top:35vw;
+  left:30vw;}
+
+#poetry video{
+  width:22vw;
+  z-index:3;
+}
+
+
+#white-noise{
+  position:absolute;
+  top:65vw;
+  left:40vw;
+}
+
+#white-noise img{
+  width:15vw;
+  z-index:2;
+}
+
+
+#about{
+  width:5vw;
+  top:10vw;
+  left:47vw;
+  position:absolute;
+}
+
+#about-description{
+  display:none;
+  width:400px;
+  position:fixed;
+  top:138px;
+  left:18vw;
+  font-size:1.2vw;
+  z-index:1600;
+}
